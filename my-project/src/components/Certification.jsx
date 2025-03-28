@@ -17,14 +17,13 @@ const Certification = () => {
     return (
         <div className="space-y-5 pt-10" id="certification_and_certificates">
             <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl text-center">
-                <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#bdc3c7] to-[#2c3e50] bg-clip-text text-transparent">
                     My License & certifications
                 </span>
             </h1>
 
             <h3 className="font-semibold text-gray-500 text-xl text-center">
-                I've built everything from simple websites to advanced web
-                apps. Here are some of the Certifications I'm most proud of.
+                Here are some of the Certifications I'm most proud of.
             </h3>
 
             {/* Grid untuk sertifikasi */}
