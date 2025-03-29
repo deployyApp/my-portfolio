@@ -1,0 +1,22 @@
+[
+    {
+        "image": "/project-1.png",
+        "title": "Certification 1",
+        "date": "Jan 2024 - Feb 2024"
+    },
+    {
+        "image": "/project-2.png",
+        "title": "Certification 2",
+        "date": "Jan 2024 - Feb 2024"
+    },
+    {
+        "image": "/project-3.png",
+        "title": "Certification 3",
+        "date": "Jan 2024 - Feb 2024"
+    },
+    {
+        "image": "/project-4.jpg",
+        "title": "Certification 4",
+        "date": "Jan 2024 - Feb 2024"
+    }
+]

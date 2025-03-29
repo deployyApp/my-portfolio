@@ -1,0 +1,59 @@
+[
+    {
+      "id": "sendbird",
+      "logo": "/1.png",
+      "company": "Sendbird",
+      "role": "Software Quality Assurance Tester Staff",
+      "date": "Feb 2025 - Present",
+      "location": "Seoul, South Korea"
+    },
+    {
+      "id": "sendbird",
+      "logo": "/1.png",
+      "company": "Sendbird",
+      "role": "Software Quality Assurance Tester Intern",
+      "date": "Oct 2024 - Feb 2025",
+      "location": "Seoul, South Korea"
+    },
+    {
+      "id": "murni-solusindo",
+      "logo": "/2.png",
+      "company": "PT. Murni Solusindo Nusantara",
+      "role": "Support & Deployment Software",
+      "date": "Sep 2024 - Oct 2024",
+      "location": "Jakarta, Indonesia"
+    },
+    {
+      "id": "batm",
+      "logo": "/3.png",
+      "company": "PT. Bumi Amartha Teknologi Mandiri",
+      "role": "Data Engineer Intern",
+      "date": "Feb 2023 - Feb 2024",
+      "location": "Jakarta, Indonesia"
+    },
+    {
+      "id": "sushiro",
+      "logo": "/4.png",
+      "company": "Sushiro",
+      "role": "Kitchen Staff",
+      "date": "May 2019 - Dec 2019",
+      "location": "Aichi, Japan"
+    },
+    {
+      "id": "genki-sushi",
+      "logo": "/5.png",
+      "company": "Genki Sushi",
+      "role": "Kitchen Staff",
+      "date": "May 2018 - Feb 2019",
+      "location": "Gifu, Japan"
+    },
+    {
+      "id": "narita-food",
+      "logo": "/6.png",
+      "company": "成田食品工業（株）",
+      "role": "Food Production Staff",
+      "date": "Nov 2017 - May 2018",
+      "location": "Gifu, Japan"
+    }
+  ]
+  

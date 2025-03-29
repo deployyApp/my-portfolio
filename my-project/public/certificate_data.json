@@ -1,0 +1,13 @@
+[
+  { "image": "/project-1.png", "title": "Certificate 1", "date": "Jan 2024 - Feb 2024" },
+  { "image": "/project-2.png", "title": "Certificate 2", "date": "Jan 2024 - Feb 2024" },
+  { "image": "/project-3.png", "title": "Certificate 3", "date": "Jan 2024 - Feb 2024" },
+  { "image": "/project-4.jpg", "title": "Certificate 4", "date": "Jan 2024 - Feb 2024" },
+  { "image": "/project-5.jpg", "title": "Certificate 5", "date": "Jan 2024 - Feb 2024" },
+  { "image": "/project-6.jpg", "title": "Certificate 6", "date": "Jan 2024 - Feb 2024" },
+  { "image": "/project-7.jpg", "title": "Certificate 7", "date": "Jan 2024 - Feb 2024" },
+  { "image": "/project-8.png", "title": "Certificate 8", "date": "Jan 2024 - Feb 2024" },
+  { "image": "/project-9.png", "title": "Certificate 9", "date": "Jan 2024 - Feb 2024" },
+  { "image": "/project-10.png", "title": "Certificate 10", "date": "Jan 2024 - Feb 2024" },
+  { "image": "/project-11.png", "title": "Certificate 11", "date": "Jan 2024 - Feb 2024" }
+]

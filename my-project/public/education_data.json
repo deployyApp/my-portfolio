@@ -1,0 +1,21 @@
+[
+    {
+      "image": "/education-1.jpg",
+      "institution": "BINUS University",
+      "field": "Information Systems",
+      "date": "Sep 2020 - Nov 2024"
+    },
+    {
+      "image": "/education-2.jpg",
+      "institution": "Hotsuma International School",
+      "field": "Japanese Language and Literature",
+      "date": "Oct 2017 - Mar 2019"
+    },
+    {
+      "image": "/education-3.png",
+      "institution": "SMAN 5 Karawang",
+      "field": "Social Science",
+      "date": "Jul 2014 - May 2017"
+    }
+  ]
+  

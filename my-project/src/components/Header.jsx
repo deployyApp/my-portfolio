@@ -37,7 +37,7 @@ const Header = () => {
         <div className="flex flex-col-reverse sm:flex-row items-start justify-between gap-3 md:gap-8" id="home">
             <div className="flex flex-col gap-2">
                 <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl text-nowrap tracking-tighter">
-                    Hi, I'm <span className="bg-gradient-to-r from-[#bdc3c7] to-[#2c3e50] bg-clip-text text-transparent">
+                    Hi, I'm <span className="bg-gradient-to-r from-[#232526] to-[#414345] bg-clip-text text-transparent">
                         Injas </span>
                         👋
                 </h1>

@@ -1,43 +1,19 @@
-import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import { FaDiscord, FaCommentDots } from "react-icons/fa";
 
 const Contact = ({ darkMode }) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-    const [isSending, setIsSending] = useState(false);
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setIsSending(true);
-
-        const emailParams = {
-            from_name: formData.name,
-            from_email: formData.email,
-            message: formData.message,
-        };
-
-        emailjs.send(
-            "service_pzh0c8j", 
-            "template_v8nebop", 
-            emailParams, 
-            "nqguc2-7wY0_BI8LW"
-        ).then(
-            (response) => {
-                console.log("SUCCESS!", response.status, response.text);
-                setIsSending(false);
-                setIsOpen(false);
-                setFormData({ name: "", email: "", message: "" });
-            },
-            (error) => {
-                console.log("FAILED...", error);
-                setIsSending(false);
-            }
-        );
-    };
+    useEffect(() => {
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function(){
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/YOUR_TAWKTO_PROPERTY_ID/default'; // edit ini setelah deploy app nya
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    }, []);
 
     return (
         <div className="flex flex-col items-center justify-center gap-3 space-y-6 p-16" id="contact">
@@ -48,67 +24,21 @@ const Contact = ({ darkMode }) => {
             </h1>
 
             <p className="text-gray-500 font-semibold text-lg text-center">
-                Want to chat? Send me an E-mail through this button and I'll respond whenever I can.
+                Want to chat? Send me a DM on Discord or chat live with me now!
             </p>
 
-            <button 
-                className="bg-black rounded-lg px-5 py-3 text-white font-bold text-lg hover:-translate-y-3 transition-all duration-300 border-2 hover:bg-white hover:border-black hover:text-black"
-                onClick={() => setIsOpen(true)}
-            >
-                Contact Me
-            </button>
-
-            {isOpen && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-96">
-                        <h2 className={`text-xl font-bold mb-4 text-center ${darkMode ? 'text-white' : 'text-black'}`}>Write a message</h2>
-                        <form onSubmit={handleSubmit}>
-                            <input 
-                                type="text" 
-                                name="name"
-                                placeholder="Your name" 
-                                value={formData.name}
-                                onChange={handleChange}
-                                className={`w-full border p-2 rounded mb-3 dark:bg-gray-700 ${darkMode ? 'text-white' : 'text-black'}`} 
-                                required
-                            />
-                            <input 
-                                type="email" 
-                                name="email"
-                                placeholder="Your email" 
-                                value={formData.email}
-                                onChange={handleChange}
-                                className={`w-full border p-2 rounded mb-3 dark:bg-gray-700 ${darkMode ? 'text-white' : 'text-black'}`} 
-                                required
-                            />
-                            <textarea 
-                                name="message"
-                                placeholder="Message" 
-                                value={formData.message}
-                                onChange={handleChange}
-                                className={`w-full border p-2 rounded mb-3 dark:bg-gray-700 ${darkMode ? 'text-white' : 'text-black'}`} 
-                                required
-                            ></textarea>
-                            <div className="flex justify-between">
-                                <button 
-                                    type="button"
-                                    className="bg-gray-300 dark:bg-gray-600 px-10 py-2 rounded hover:scale-110" 
-                                    onClick={() => setIsOpen(false)}
-                                >
-                                    Cancel
-                                </button>
-                                <button 
-                                    type="submit"
-                                    className="bg-black text-white px-10 py-2 rounded hover:scale-110"
-                                    disabled={isSending}
-                                >
-                                    {isSending ? "Sending..." : "Send"}
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            )}
+            <div className="bg-white dark:bg-gray-800 shadow-lg w-96 text-center">   
+                <motion.a 
+                    href="https://discord.com/users/882167428946206781" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 bg-gray-700 text-white w-full py-3 rounded-lg font-semibold text-lg shadow-md hover:bg-gray-600 transition-all duration-300"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                >
+                    <FaDiscord className="text-xl" /> Send Me a DM
+                </motion.a>
+            </div>
 
             <div className="text-center text-gray-500 text-sm mt-6">
                 <p>Made with ❤️ and dedication</p>
