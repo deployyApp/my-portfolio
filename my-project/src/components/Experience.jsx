@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import logo1 from "/1.png";
 import logo2 from "/2.png";
 import logo3 from "/3.png";
@@ -47,11 +49,14 @@ const groupedExperiences = sortedExperiences.reduce((acc, exp) => {
 }, []);
 
 const Experience = () => {
+    const [showAll, setShowAll] = useState(false);
+    const visibleExperiences = showAll ? groupedExperiences : groupedExperiences.slice(0, 5);
+
     return (
-        <div className="space-y-3" id="workExperience">
+        <div className="space-y-3 text-center" id="workExperience">
             <h2 className="text-xl font-bold">Work Experience</h2>
-            {groupedExperiences.map((exp, index) => (
-                <div key={index} className="pb-3">
+            {visibleExperiences.map((exp, index) => (
+                <div key={index} className="pb-3 text-left">
                     <div className="flex items-start gap-5">
                         <img src={exp.logo} alt={`company_${index + 1}`} className="w-14 border rounded-full shadow-md" />
                         <div className="flex flex-col w-full">
@@ -73,6 +78,15 @@ const Experience = () => {
                     </div>
                 </div>
             ))}
+            {groupedExperiences.length > 5 && (
+                <button 
+                    className="bg-gray-200 text-black px-6 py-2 rounded-lg mt-4 flex items-center justify-center w-full text-sm hover:bg-gray-300 transition"
+                    onClick={() => setShowAll(!showAll)}
+                >
+                    {showAll ? "View Less" : "View More"}
+                    {showAll ? <FaChevronUp className="ml-2" /> : <FaChevronDown className="ml-2" />}
+                </button>
+            )}
         </div>
     );
 };

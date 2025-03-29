@@ -4,9 +4,8 @@ import { useEffect, useState } from "react";
 
 const roles = [
     "Content Writer",
-    "Freelancer",
     "Photographer",
-    "Quality Assurance"
+    "Quality Assurance Engineer"
 ];
 
 const Header = () => {
